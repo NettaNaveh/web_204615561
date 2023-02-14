@@ -1,0 +1,61 @@
+
+extends layout
+block content
+    body
+
+          div
+                #navMenu
+                    a.navMenu_a(href="/My_Cart" id="mycart") My cart
+                    a.navMenu_a(href='#Garden-vegetables') Garden vegetables
+                    a.navMenu_a(href='#Lettuce') Lettuce
+                    a.navMenu_a(href='#Herbs') Herbs
+                    a.navMenu_a(href='#Mushrooms') Mushrooms
+          br
+          br
+          div
+                h1 Garden vegetables
+                .row(id="Garden-vegetables")
+                      each veg in gv
+                             .card
+                                  .card-title
+                                  p #{veg.name}
+                                  img.cardImage(src = veg.image )
+                                  p #{veg.price}₪  per kg
+                                  br
+                                  input(type="number",value=1)
+                                  button.button add
+                h1 Lettuce
+                .row(id="Lettuce")
+                      each veg in lettuce
+                            .card
+                                  .card-title
+                                  p #{veg.name}
+                                  img.cardImage(src = veg.image )
+                                  p #{veg.price}₪  per kg
+                                  br
+                                  input(type="number",value=1)
+                                  button.button add
+                h1 Herbs
+                .row(id="Herbs")
+                      each veg in herb
+                            .card
+                                  .card-title
+                                  p #{veg.name}
+                                  img.cardImage(src = veg.image)
+                                  p #{veg.price}₪  per kg
+                                  br
+                                  input(type="number",value=1)
+                                  button.button add
+
+                h1 Mushrooms
+                .row(id="Mushrooms")
+                      each veg in mushrooms
+                            .card
+                                  .card-title
+                                  p #{veg.name}
+                                  img.cardImage(src = veg.image )
+                                  p #{veg.price}₪  per kg
+                                  br
+                                  input(type="number",value=1)
+                                  button.button add
+

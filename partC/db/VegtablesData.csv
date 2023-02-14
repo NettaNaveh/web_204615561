@@ -1,0 +1,13 @@
+name,price,category,image
+Cucumber,5,Garden vegetables,../Graphics/cucumber.jpg
+Tomato,4,Garden vegetables,../Graphics/tomato.jpg
+Salanova lettuce,6.3,Lettuce,../Graphics/salanova.jpg
+Portobello,5,Mushrooms,../Graphics/portabelo.jpg
+Mint,10,Herbs,../Graphics/mint.jpg
+Pepper,5.5,Garden vegetables,../Graphics/pepper.png
+Curly lettuce,15,Lettuce,../Graphics/curly_lettuce.png
+Arabic lettuce,12.4,Lettuce,../Graphics/arabic_lettuce.png
+Carrot,4.2,Garden vegetables,../Graphics/carrot.png
+Parsley,9,Herbs,../Graphics/parsley.png
+Coriander,9,Herbs,../Graphics/coriander.png
+Champagne,17,Mushrooms,../Graphics/champagne.png

@@ -1,0 +1,21 @@
+
+extends layout
+block content
+    h1 #{V1}
+    br
+    div
+    h3 Please fill in your personal details
+    #form_container.confirm-card
+      form#order_form(action='../newCustomer' method='POST')
+        label(for='firstName') First Name
+        input#firstName.input_customer(form='order_form' required='' type='text' name='firstName' value='' minlength='2' placeholder='Enter your first name..')
+        br
+        label(for='lastName') Last Name
+        input#lastName.input_customer(form='order_form' required='' type='text' name='lastName' value='' minlength='2' placeholder='Enter your last name..')
+        br
+        label(for='email') Email
+        input#email.input_customer(type='email' required='' name='email' pattern='[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$' placeholder='Enter your email..')
+        br
+        a.button1(href="/order_confirmation" id="confirmation") Submit
+        //button#confirm_details.card-btn(type='submit' onclick='clearShoppingList()') Submit
+

@@ -1,0 +1,24 @@
+extends layout
+block content
+    .cart_container
+        h1
+            | My Shopping Cart
+
+        table#shopping-cart
+            tr
+                th Item
+                th Quantity
+                th Price
+                th
+            tbody
+                each item in cart
+                    tr
+                        td #{item.name}
+                        td #{item.qty}
+                        td #{item.price}
+        br
+        #total-price.card-title Total price #{sum} &#x20AA;
+        br
+        a.button1(href='/customer_detailes') Complete order
+
+

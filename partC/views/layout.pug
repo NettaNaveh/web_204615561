@@ -1,0 +1,27 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=EDGE")
+        meta(name="viewport", content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="style.css")
+        script(src= '../index.js', defer='')
+        script(src= '../functions.js', defer='')
+        title Document
+
+    .Row
+        .ab
+            #Container_Logo
+                img#logo(src='../Graphics/farmer1-removebg.png')
+        .ab
+            #header
+                | Alexander Farm
+        .ab
+            .nav
+                 a.navMenu_a(href="/vegetables") back to shop
+
+    body
+        block content
+    footer
+        p &copy; 2023 All Rights Reserved
+
