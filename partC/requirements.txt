@@ -1,0 +1,34 @@
+npm install
+express 
+body-parser
+csv
+node js
+pug
+json
+mysql2
+csv-stringify
+csv-parser
+csvtojson
+
+
+path to routes :
+
+/CreateCustomersTable
+/CreateOrdersTables
+/CreateVegtablesTable
+
+/InsertData_Customers
+/InsertData_Orders
+app.get('/InsertData_Vegtables
+
+/ShowCustomersTable
+/ShowOrdersTable
+/ShowVegtablesTable
+
+/DropCustomersTable
+/DropOrdersTable
+/DropVegtablesTable
+
+CREATE TABLE Vegtables (VegtableId int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT, name varchar(255) NOT NULL, price integer NOT NULL, category varchar(255) NOT NULL, image nvarchar(100))
+CREATE TABLE Orders (customer_id int NOT NULL, vegetable varchar(255) NOT NULL, quantity decimal(10,0) NOT NULL, price decimal(10,0) NOT NULL)"
+CREATE TABLE Customers (CustomerId int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT, firstName varchar(255) NOT NULL, lastName varchar(255) NOT NULL, email varchar(255) NOT NULL)"
