@@ -1,0 +1,497 @@
+* {
+    margin: 10px;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e3dbce;
+    color: #145017;
+    line-height: 1.8;
+    text-align: center;
+}
+.OKbtn{
+     background-color: #fdfaf1;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    border: 2px black solid;
+    border-radius: 20px;
+    width: fit-content;
+    height: fit-content;
+    color: black;
+    margin: 3px;
+}
+
+h1 {
+    color: #145017;
+    font-family: cursive;
+    font-style: oblique;
+    text-align: center;
+    /*border-bottom: 1px solid black;*/
+padding-bottom: 5px;
+}
+
+
+h2 {
+    color: #145017;
+    padding: 10px;
+    margin: 10px;
+}
+h3 {
+    color: #145017;
+    padding: 10px;
+    margin: 10px;
+}
+#Container_Logo{
+  grid-area: initial;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+    justify-items: left;
+    padding-left:20px ;
+    margin-top: 2px;
+}
+#logo{
+  width: 100px;
+  width: 100px;
+   float: left;
+}
+
+.totalPrice {
+    margin-top: 10px;
+}
+
+.header{
+    color: #145017;
+  text-align:center;
+  grid-area: Header;
+  letter-spacing: 1px;
+  word-spacing: 10px;
+    font-family: cursive;
+  font-size: 60px;
+  font-weight: bold;
+    margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#basketImg{
+  width: 400px;
+  width: 400px;
+   float: right;
+}
+.Container_Header{
+  grid-area: Header;
+  text-align: center;
+  letter-spacing: 1px;
+  word-spacing: 10px;
+  font-size: 47px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+#shopName {
+    /*padding: 5% 10% 0% 10%;*/
+
+    height: fit-content;
+    text-align: center;
+    font-family: cursive;
+    font-size: 60px;
+    background-color: #145017;
+    grid-area: shopName;
+}
+
+.container {
+    background-color: #87b289;
+    text-align: center;
+  display: flex;
+    height: fit-content;
+  justify-content: center;
+}
+
+
+.cart_container{
+        background-color: #ffffff;
+    text-align: center;
+    display: flex;
+    border: 2px black solid;
+    border-radius: 10px;
+    width: fit-content;
+    height: fit-content;
+    justify-content: center;
+    padding: 10px;
+    /*margin: 10px;*/
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#first_container{
+  display: grid;
+  grid-template-areas:
+  'logo header header'
+'nav header header';
+}
+
+.nav {
+  font-weight: bold;
+    font-family: cursive;
+  font-size: 17px;
+  /*display: list-item;*/
+    float: left;
+    padding: 3px;
+    grid-gap: 5px;
+}
+
+
+.nav-list {
+  text-align: right;
+  margin-right: 10px;
+  margin-top: 30px;
+}
+
+.nav-list .list-item{
+  display: inline-block;
+  padding: 7px;
+}
+.nav a{
+  color: #000000;
+}
+
+.nav a:hover{
+  background-color: #87B289FF;
+  border-radius: 5px;
+
+}
+.nav_container{
+    background-color: #fdfaf1;
+    display: flex;
+    justify-content: space-around;
+    border: 2px black solid;
+    border-radius: 15px;
+    width: fit-content;
+    height: fit-content;
+    color: white;
+    margin: 10px;
+    padding-right: 15px;
+    /*flex-basis: 100px;*/
+    /*flex: 1 1 200px;*/
+    /*flex: 1;*/
+
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+}
+
+.confirm-card{
+    /*background-image: linear-gradient(0deg, var(--MyPurple),transparent);*/
+    background-color: #b0ccb0;
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: 0 5px 10px var(--MyGrey);
+    transition: all 0.4s ease;
+    flex-direction: column;
+    width: 225px;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30em;
+}
+
+
+.card{
+    background-color: #87b289;
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: 0 5px 10px var(--MyGrey);
+    transition: all 0.4s ease;
+    flex-direction: column;
+    width: 225px;
+}
+.card-image {
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+}
+
+.card-title {
+    text-align: center;
+}
+
+
+.cart-info {
+    width: 5px;
+    height: 5px;
+    text-align: center;
+}
+/*#shopping-cart{*/
+/*    */
+/*}*/
+table {
+    border-collapse: collapse;
+/*border-style: solid;*/
+}
+
+th {
+    min-width: 100px;
+}
+
+td {
+    max-width: 100px;
+}
+
+tr {
+    border-bottom: 1px solid purple;
+}
+
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+
+.flex-container {
+    background-color: #ffffff;
+    display: flex;
+    height: 400px;
+
+    border: 1px black solid;
+    width: 100px;
+    height: 100px;
+    background: cadetblue;
+    color: white;
+    margin: 10px;
+    /*flex-basis: 100px;*/
+    /*flex: 1 1 200px;*/
+    /*flex: 1;*/
+
+    display: flex;
+    /*justify-content: left;*/
+    /*align-items: flex-start;*/
+
+    /*justify-content: start;*/
+    /*justify-content: center;*/
+    /*justify-content: end;*/
+    /*justify-content: space-evenly;*/
+    /*justify-content: space-around;*/
+    /*justify-content: space-between;*/
+
+    /*align-items: start;*/
+    /*align-items: end;*/
+    align-items: center;
+
+    flex-wrap: wrap;
+    /*flex-wrap: nowrap;*/
+
+    flex-direction: row;
+    /*flex-direction: row-reverse;*/
+    /*flex-direction: column;*/
+    /*flex-direction: column-reverse;*/
+}
+
+/*.item {*/
+/*    border: 1px black solid;*/
+/*    width: 150px;*/
+/*    height: 150px;*/
+/*    background: peachpuff;*/
+/*    color: black;*/
+/*    margin: 10px;*/
+/*    flex-basis: 100px;*/
+/*    !*flex: 1 1 200px;*!*/
+/*    !*flex: 1;*!*/
+
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*}*/
+
+.item:nth-child(1) {
+    /*align-self: start;*/
+    /*order: 3;*/
+    /*flex-grow: 3;*/
+    /*flex-shrink: 3;*/
+    /*flex-basis: 300px;*/
+}
+
+.item:nth-child(2) {
+    /*align-self: start;*/
+    /*order: 3;*/
+    /*flex-basis: 200px;*/
+    /*flex-grow: 2;*/
+    /*flex-shrink: 2;*/
+}
+
+.item:nth-child(3) {
+    /*align-self: end;*/
+    /*order: 1;*/
+    /*flex-grow: 1;*/
+    /*flex-shrink: 1;*/
+}
+:root {
+
+    --MyBlack: 	#000000;
+    --MyWhite:	#FFFFFF;
+    --MyDarkerBlue: #87b289;
+    --MyLighterBlue: #87b289;
+    --MyGreyBlue: #b5d4e7;
+    --MyLight:  #a4badc;
+    --MyPurple: #ffffff;
+    --MyDarkerPurple: #8630d1;
+    --MyRed: #db2505;
+    --MyGrey: #808080;
+}
+
+#Container_Header{
+  grid-area: Header;
+  text-align: center;
+  letter-spacing: 1px;
+  word-spacing: 10px;
+  font-size: 47px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
+
+.item{
+  background-image: linear-gradient(0deg, var(--MyPurple),transparent);
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 0 5px 10px var(--MyGrey);
+  transition: all 0.4s ease;
+  width: 225px;
+}
+
+.input_customer{
+  padding: 7px;
+  border: 2px solid var(--MyGrey);
+  border-radius: 8px;
+}
+
+.confirm-card{
+ align-items: flex-start;
+
+}
+
+/*************************************************************/
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+/*******************************/
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+/*!* Style the collapsible content. Note: hidden by default *!*/
+/*.content {*/
+/*  padding: 0 18px;*/
+/*  display: none;*/
+/*  overflow: hidden;*/
+/*  background-color: #f1f1f1;*/
+/*}*/
+
+
+/*********beutiful button*****************/
+
+.card-btn {
+    display: inline-block;
+    color: #0a0a0a;
+    text-decoration: none;
+    padding: 1rem 1rem;
+    border: #0a0a0a 2px solid;
+    border-radius: 30px;
+    margin-top: 20px;
+    opacity: 0;
+
+    animation: card-btn;
+    animation-duration: 1s;
+    /*animation-delay: 3s;*/
+    animation-fill-mode: forwards;
+
+    /*transition-property: transform, background-color, color;*/
+    transition-property: background-color, color;
+    transition-duration: 0.5s;
+}
+
+@keyframes card-btn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+.card-btn:hover {
+    /*transform: rotateZ(360deg);*/
+    background-color: #87b289;
+    color: #0a0a0a;
+}
